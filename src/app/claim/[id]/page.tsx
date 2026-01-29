@@ -353,7 +353,7 @@ export default function ClaimDetailPage() {
     const ASSESSMENT_DURATION_MS = 4000;
     setTimeout(() => {
       setSelectedImageUrl(imageToUse);
-      const annotatedUrl = claim?.annotatedVehicleImageUrl && assessment?.damages.length > 0
+      const annotatedUrl = claim?.annotatedVehicleImageUrl && (assessment?.damages?.length ?? 0) > 0
         ? claim.annotatedVehicleImageUrl
         : undefined;
       setSelectedAnnotatedImageUrl(annotatedUrl);
