@@ -4,11 +4,11 @@ import { join } from "path";
 
 export async function POST(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
+  const { id: claimId } = await params;
   try {
     const { imageDataUrl } = await request.json();
-    const claimId = params.id;
 
     if (!imageDataUrl || !imageDataUrl.startsWith("data:image")) {
       return NextResponse.json(
