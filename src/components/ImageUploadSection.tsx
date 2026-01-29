@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useRef } from "react";
-import Image from "next/image";
 
 interface ImageUploadSectionProps {
   claimId: string;
@@ -237,21 +236,11 @@ export function ImageUploadSection({
                 className="group relative overflow-hidden rounded-lg border border-gray-200 dark:border-gray-700"
               >
                 <div className="aspect-square w-full overflow-hidden bg-gray-100 dark:bg-gray-800">
-                  {imageUrl.startsWith("data:") ? (
-                    <img
-                      src={imageUrl}
-                      alt={`Uploaded image ${index + 1}`}
-                      className="h-full w-full object-cover"
-                    />
-                  ) : (
-                    <Image
-                      src={imageUrl}
-                      alt={`Uploaded image ${index + 1}`}
-                      width={200}
-                      height={200}
-                      className="h-full w-full object-cover"
-                    />
-                  )}
+                  <img
+                    src={imageUrl}
+                    alt={`Uploaded image ${index + 1}`}
+                    className="h-full w-full object-cover"
+                  />
                 </div>
                 <button
                   type="button"
