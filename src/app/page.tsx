@@ -57,12 +57,7 @@ export default function LandingPage() {
         <div className="mb-8 flex justify-end">
           <div className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400">
             <span>Powered by</span>
-            <a
-              href="https://scale.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-1.5 font-semibold text-gray-900 transition-colors hover:text-blue-600 dark:text-white dark:hover:text-blue-400"
-            >
+            <span className="flex items-center gap-1.5 font-semibold text-gray-900 dark:text-white">
               {/* Scale Vision AI Logo - Place logo at /public/scale-vision-ai-logo.svg or update src */}
               <span id="scaleai-logo-container">
                 <img
@@ -82,7 +77,7 @@ export default function LandingPage() {
                 />
                 <span id="scaleai-text-fallback">Scale Vision AI</span>
               </span>
-            </a>
+            </span>
           </div>
         </div>
 
