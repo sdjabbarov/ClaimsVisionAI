@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 
 interface ImageUploadSectionProps {
   claimId: string;
@@ -28,7 +28,12 @@ export function ImageUploadSection({
 }: ImageUploadSectionProps) {
   const [uploading, setUploading] = useState(false);
   const [assessing, setAssessing] = useState<string | null>(null);
+  const [origin, setOrigin] = useState<string | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    setOrigin(window.location.origin);
+  }, []);
 
   const handleFileSelect = async (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
@@ -230,14 +235,20 @@ export function ImageUploadSection({
       ) : (
         <>
           <div className="mb-6 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
-            {existingImages.map((imageUrl, index) => (
+            {existingImages.map((imageUrl, index) => {
+              // Use absolute URL once origin is known so deployed site (e.g. Railway) loads from correct origin
+              const imgSrc =
+                origin && !imageUrl.startsWith("data:") && !imageUrl.startsWith("http")
+                  ? origin + (imageUrl.startsWith("/") ? imageUrl : `/${imageUrl}`)
+                  : imageUrl;
+              return (
               <div
                 key={index}
                 className="group relative overflow-hidden rounded-lg border border-gray-200 dark:border-gray-700"
               >
                 <div className="aspect-square w-full overflow-hidden bg-gray-100 dark:bg-gray-800">
                   <img
-                    src={imageUrl}
+                    src={imgSrc}
                     alt={`Uploaded image ${index + 1}`}
                     className="h-full w-full object-cover"
                   />
@@ -267,7 +278,8 @@ export function ImageUploadSection({
                   </svg>
                 </button>
               </div>
-            ))}
+              );
+            })}
           </div>
           
           {/* Proceed Button - Only show if assessment section is not already visible */}
