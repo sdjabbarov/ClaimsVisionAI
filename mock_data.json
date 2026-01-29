@@ -1,0 +1,1395 @@
+
+[
+  {
+    "id": "CLM-001",
+    "policyInfo": {
+      "policyNumber": "CA-987654321",
+      "vehicleDetails": {
+        "licensePlate": "8ABC123",
+        "vin": "1GKS19E58F123456",
+        "make": "Ford",
+        "model": "Fusion",
+        "year": 2017
+      },
+      "driverName": "John Doe",
+      "driverContact": "john.doe@email.com",
+      "driverLicense": {
+        "number": "D12345678",
+        "state": "CA"
+      },
+      "wasPolicyholderDriving": "Yes",
+      "estimatedVehicleValue": 12000,
+      "totalLossThreshold": 0.75
+    },
+    "incidentDetails": {
+      "dateTime": "2026-01-15T09:30:00Z",
+      "location": "123 Main St, Los Angeles, CA",
+      "description": "Was rear-ended at a red light.",
+      "type": "Collision",
+      "speedOfTravel": "0 mph"
+    },
+    "otherParties": [
+      {
+        "name": "Alice Johnson",
+        "contact": "N/A",
+        "policyNumber": "UNKNOWN",
+        "vehicleDetails": "Toyota Camry, Gray"
+      }
+    ],
+    "policeReport": {
+      "reportNumber": "LA-2026-001234",
+      "wasPoliceCalled": "Yes"
+    },
+    "damageDetails": {
+      "description": "Front bumper cracked, hood creased, left headlight shattered.",
+      "isDrivable": "No",
+      "personalPropertyDamaged": "No",
+      "priorExistingDamage": "No"
+    },
+    "repairInfo": {
+      "preferredShop": "N/A",
+      "estimatesObtained": "No",
+      "towingReceipts": "Yes",
+      "rentalCarNeeds": "Yes"
+    },
+    "injuryInfo": {
+      "wasAnyoneInjured": "No",
+      "injuryDescription": "N/A",
+      "medicalProvider": "N/A"
+    },
+    "theftInfo": {
+      "proofOfOwnership": "N/A",
+      "stolenItems": "N/A",
+      "spareKeyConfirmation": "N/A"
+    },
+    "vehicleImageUrl": "/home/ubuntu/mock_images/raw/car_damage_01.jpg",
+    "annotatedVehicleImageUrl": "/home/ubuntu/mock_images/annotated/car_damage_01_annotated.jpg",
+    "aiAssessment": {
+      "confidenceScore": 0.92,
+      "totalEstimatedCost": 2500,
+      "isTotalLoss": false,
+      "damages": [
+        {"type": "Bumper Damage", "location": "Front Bumper", "severity": "High", "estimatedCost": 1200},
+        {"type": "Hood Damage", "location": "Hood", "severity": "Medium", "estimatedCost": 850},
+        {"type": "Headlight", "location": "Left Headlight", "severity": "High", "estimatedCost": 450}
+      ]
+    }
+  },
+  {
+    "id": "CLM-002",
+    "policyInfo": {
+      "policyNumber": "NY-123456789",
+      "vehicleDetails": {
+        "licensePlate": "FGH456",
+        "vin": "2G1WC5E58F123457",
+        "make": "Nissan",
+        "model": "Pathfinder",
+        "year": 2018
+      },
+      "driverName": "Jane Smith",
+      "driverContact": "jane.smith@email.com",
+      "driverLicense": {
+        "number": "S87654321",
+        "state": "NY"
+      },
+      "wasPolicyholderDriving": "Yes",
+      "estimatedVehicleValue": 18000,
+      "totalLossThreshold": 0.75
+    },
+    "incidentDetails": {
+      "dateTime": "2026-01-16T14:00:00Z",
+      "location": "Intersection of 5th Ave and 34th St, New York, NY",
+      "description": "Vehicle was struck from behind while waiting to turn.",
+      "type": "Collision",
+      "speedOfTravel": "5 mph"
+    },
+    "otherParties": [],
+    "policeReport": {
+      "reportNumber": "N/A",
+      "wasPoliceCalled": "No"
+    },
+    "damageDetails": {
+      "description": "Rear bumper dented, tailgate buckled, right tail light cracked.",
+      "isDrivable": "Yes",
+      "personalPropertyDamaged": "No",
+      "priorExistingDamage": "Yes - minor scratch on front door"
+    },
+    "repairInfo": {
+      "preferredShop": "City Auto Repair",
+      "estimatesObtained": "No",
+      "towingReceipts": "No",
+      "rentalCarNeeds": "No"
+    },
+    "injuryInfo": {
+      "wasAnyoneInjured": "Yes",
+      "injuryDescription": "Minor whiplash reported by driver.",
+      "medicalProvider": "St. Luke's Hospital"
+    },
+    "theftInfo": {
+      "proofOfOwnership": "N/A",
+      "stolenItems": "N/A",
+      "spareKeyConfirmation": "N/A"
+    },
+    "vehicleImageUrl": "/home/ubuntu/mock_images/raw/car_damage_02.jpg",
+    "annotatedVehicleImageUrl": "/home/ubuntu/mock_images/annotated/car_damage_02_annotated.jpg",
+    "aiAssessment": {
+      "confidenceScore": 0.88,
+      "totalEstimatedCost": 3070,
+      "isTotalLoss": false,
+      "damages": [
+        {"type": "Rear Bumper", "location": "Rear Bumper", "severity": "High", "estimatedCost": 950},
+        {"type": "Tailgate", "location": "Tailgate", "severity": "High", "estimatedCost": 1800},
+        {"type": "Tail Light", "location": "Right Tail Light", "severity": "Medium", "estimatedCost": 320}
+      ]
+    }
+  },
+  {
+    "id": "CLM-003",
+    "policyInfo": {
+      "policyNumber": "TX-555444333",
+      "vehicleDetails": {
+        "licensePlate": "XYZ1234",
+        "vin": "3G1RB6E58F123458",
+        "make": "Toyota",
+        "model": "Yaris",
+        "year": 2019
+      },
+      "driverName": "Peter Jones",
+      "driverContact": "peter.jones@email.com",
+      "driverLicense": {
+        "number": "J1234567",
+        "state": "TX"
+      },
+      "wasPolicyholderDriving": "Yes",
+      "estimatedVehicleValue": 9000,
+      "totalLossThreshold": 0.75
+    },
+    "incidentDetails": {
+      "dateTime": "2026-01-17T18:45:00Z",
+      "location": "Parking lot of H-E-B, Austin, TX",
+      "description": "Another car reversed into the driver's side door.",
+      "type": "Collision",
+      "speedOfTravel": "0 mph"
+    },
+    "otherParties": [
+      {
+        "name": "Unknown",
+        "contact": "N/A",
+        "policyNumber": "N/A",
+        "vehicleDetails": "Black SUV, unknown make/model"
+      }
+    ],
+    "policeReport": {
+      "reportNumber": "N/A",
+      "wasPoliceCalled": "No"
+    },
+    "damageDetails": {
+      "description": "Driver's door dented, side mirror broken, scratches along side.",
+      "isDrivable": "Yes",
+      "personalPropertyDamaged": "No",
+      "priorExistingDamage": "No"
+    },
+    "repairInfo": {
+      "preferredShop": "N/A",
+      "estimatesObtained": "No",
+      "towingReceipts": "No",
+      "rentalCarNeeds": "Yes"
+    },
+    "injuryInfo": {
+      "wasAnyoneInjured": "No",
+      "injuryDescription": "N/A",
+      "medicalProvider": "N/A"
+    },
+    "theftInfo": {
+      "proofOfOwnership": "N/A",
+      "stolenItems": "N/A",
+      "spareKeyConfirmation": "N/A"
+    },
+    "vehicleImageUrl": "/home/ubuntu/mock_images/raw/car_damage_03.jpg",
+    "annotatedVehicleImageUrl": "/home/ubuntu/mock_images/annotated/car_damage_03_annotated.jpg",
+    "aiAssessment": {
+      "confidenceScore": 0.95,
+      "totalEstimatedCost": 2780,
+      "isTotalLoss": false,
+      "damages": [
+        {"type": "Door Panel", "location": "Front Left Door", "severity": "High", "estimatedCost": 1400},
+        {"type": "Side Mirror", "location": "Left Side Mirror", "severity": "High", "estimatedCost": 280},
+        {"type": "Paint/Body Work", "location": "Left Side", "severity": "Medium", "estimatedCost": 1100}
+      ]
+    }
+  },
+  {
+    "id": "CLM-004",
+    "policyInfo": {
+      "policyNumber": "FL-888777666",
+      "vehicleDetails": {
+        "licensePlate": "QWE567",
+        "vin": "4G1LK5E58F123459",
+        "make": "Mercedes-Benz",
+        "model": "E-Class",
+        "year": 2020
+      },
+      "driverName": "Mary Williams",
+      "driverContact": "mary.williams@email.com",
+      "driverLicense": {
+        "number": "W12345678",
+        "state": "FL"
+      },
+      "wasPolicyholderDriving": "Yes",
+      "estimatedVehicleValue": 35000,
+      "totalLossThreshold": 0.75
+    },
+    "incidentDetails": {
+      "dateTime": "2026-01-18T16:20:00Z",
+      "location": "Home address, Miami, FL",
+      "description": "Vehicle was damaged in a severe hailstorm.",
+      "type": "Weather Damage",
+      "speedOfTravel": "0 mph"
+    },
+    "otherParties": [],
+    "policeReport": {
+      "reportNumber": "N/A",
+      "wasPoliceCalled": "No"
+    },
+    "damageDetails": {
+      "description": "Multiple dents on hood and roof, windshield cracked.",
+      "isDrivable": "Yes",
+      "personalPropertyDamaged": "No",
+      "priorExistingDamage": "No"
+    },
+    "repairInfo": {
+      "preferredShop": "Prestige Auto Body",
+      "estimatesObtained": "No",
+      "towingReceipts": "No",
+      "rentalCarNeeds": "No"
+    },
+    "injuryInfo": {
+      "wasAnyoneInjured": "No",
+      "injuryDescription": "N/A",
+      "medicalProvider": "N/A"
+    },
+    "theftInfo": {
+      "proofOfOwnership": "N/A",
+      "stolenItems": "N/A",
+      "spareKeyConfirmation": "N/A"
+    },
+    "vehicleImageUrl": "/home/ubuntu/mock_images/raw/car_damage_04.jpg",
+    "annotatedVehicleImageUrl": "/home/ubuntu/mock_images/annotated/car_damage_04_annotated.jpg",
+    "aiAssessment": {
+      "confidenceScore": 0.98,
+      "totalEstimatedCost": 3850,
+      "isTotalLoss": false,
+      "damages": [
+        {"type": "Hail Dents (32 count)", "location": "Hood and Roof", "severity": "Medium", "estimatedCost": 3200},
+        {"type": "Windshield", "location": "Windshield", "severity": "High", "estimatedCost": 650}
+      ]
+    }
+  },
+  {
+    "id": "CLM-005",
+    "policyInfo": {
+      "policyNumber": "AZ-222333444",
+      "vehicleDetails": {
+        "licensePlate": "RTY890",
+        "vin": "5G1RB6E58F123460",
+        "make": "Dodge",
+        "model": "Ram 1500",
+        "year": 2021
+      },
+      "driverName": "David Brown",
+      "driverContact": "david.brown@email.com",
+      "driverLicense": {
+        "number": "B8765432",
+        "state": "AZ"
+      },
+      "wasPolicyholderDriving": "Yes",
+      "estimatedVehicleValue": 42000,
+      "totalLossThreshold": 0.75
+    },
+    "incidentDetails": {
+      "dateTime": "2026-01-19T11:10:00Z",
+      "location": "I-10, Phoenix, AZ",
+      "description": "Lost control on a turn and hit a guardrail.",
+      "type": "Collision",
+      "speedOfTravel": "45 mph"
+    },
+    "otherParties": [],
+    "policeReport": {
+      "reportNumber": "AZ-2026-005678",
+      "wasPoliceCalled": "Yes"
+    },
+    "damageDetails": {
+      "description": "Front right fender crumpled, headlight destroyed, bumper loose.",
+      "isDrivable": "No",
+      "personalPropertyDamaged": "No",
+      "priorExistingDamage": "No"
+    },
+    "repairInfo": {
+      "preferredShop": "N/A",
+      "estimatesObtained": "No",
+      "towingReceipts": "Yes",
+      "rentalCarNeeds": "Yes"
+    },
+    "injuryInfo": {
+      "wasAnyoneInjured": "No",
+      "injuryDescription": "N/A",
+      "medicalProvider": "N/A"
+    },
+    "theftInfo": {
+      "proofOfOwnership": "N/A",
+      "stolenItems": "N/A",
+      "spareKeyConfirmation": "N/A"
+    },
+    "vehicleImageUrl": "/home/ubuntu/mock_images/raw/car_damage_05.jpg",
+    "annotatedVehicleImageUrl": "/home/ubuntu/mock_images/annotated/car_damage_05_annotated.jpg",
+    "aiAssessment": {
+      "confidenceScore": 0.91,
+      "totalEstimatedCost": 2530,
+      "isTotalLoss": false,
+      "damages": [
+        {"type": "Fender", "location": "Front Right Fender", "severity": "High", "estimatedCost": 1200},
+        {"type": "Headlight", "location": "Right Headlight", "severity": "High", "estimatedCost": 550},
+        {"type": "Bumper Damage", "location": "Front Bumper", "severity": "Medium", "estimatedCost": 780}
+      ]
+    }
+  },
+  {
+    "id": "CLM-006",
+    "policyInfo": {
+      "policyNumber": "IL-789012345",
+      "vehicleDetails": {
+        "licensePlate": "JKL123",
+        "vin": "6G1RB6E58F123461",
+        "make": "Honda",
+        "model": "Odyssey",
+        "year": 2016
+      },
+      "driverName": "Susan Miller",
+      "driverContact": "susan.miller@email.com",
+      "driverLicense": {
+        "number": "M1234567",
+        "state": "IL"
+      },
+      "wasPolicyholderDriving": "Yes",
+      "estimatedVehicleValue": 15000,
+      "totalLossThreshold": 0.75
+    },
+    "incidentDetails": {
+      "dateTime": "2026-01-20T10:00:00Z",
+      "location": "Whole Foods parking lot, Chicago, IL",
+      "description": "Scraped against a concrete pillar while parking.",
+      "type": "Collision",
+      "speedOfTravel": "2 mph"
+    },
+    "otherParties": [],
+    "policeReport": {
+      "reportNumber": "N/A",
+      "wasPoliceCalled": "No"
+    },
+    "damageDetails": {
+      "description": "Long scratch along passenger side door and quarter panel.",
+      "isDrivable": "Yes",
+      "personalPropertyDamaged": "No",
+      "priorExistingDamage": "No"
+    },
+    "repairInfo": {
+      "preferredShop": "N/A",
+      "estimatesObtained": "No",
+      "towingReceipts": "No",
+      "rentalCarNeeds": "No"
+    },
+    "injuryInfo": {
+      "wasAnyoneInjured": "No",
+      "injuryDescription": "N/A",
+      "medicalProvider": "N/A"
+    },
+    "theftInfo": {
+      "proofOfOwnership": "N/A",
+      "stolenItems": "N/A",
+      "spareKeyConfirmation": "N/A"
+    },
+    "vehicleImageUrl": "/home/ubuntu/mock_images/raw/car_damage_06.jpg",
+    "annotatedVehicleImageUrl": "/home/ubuntu/mock_images/annotated/car_damage_06_annotated.jpg",
+    "aiAssessment": {
+      "confidenceScore": 0.96,
+      "totalEstimatedCost": 2070,
+      "isTotalLoss": false,
+      "damages": [
+        {"type": "Door Panel", "location": "Front Right Door", "severity": "Medium", "estimatedCost": 890},
+        {"type": "Quarter Panel", "location": "Rear Right Quarter Panel", "severity": "Medium", "estimatedCost": 680},
+        {"type": "Paint/Body Work", "location": "Right Side", "severity": "Low", "estimatedCost": 500}
+      ]
+    }
+  },
+  {
+    "id": "CLM-007",
+    "policyInfo": {
+      "policyNumber": "MI-654321098",
+      "vehicleDetails": {
+        "licensePlate": "PQR456",
+        "vin": "7G1RB6E58F123462",
+        "make": "Ford",
+        "model": "Mustang",
+        "year": 1998
+      },
+      "driverName": "Robert Wilson",
+      "driverContact": "robert.wilson@email.com",
+      "driverLicense": {
+        "number": "W1234567",
+        "state": "MI"
+      },
+      "wasPolicyholderDriving": "Yes",
+      "estimatedVehicleValue": 8000,
+      "totalLossThreshold": 0.75
+    },
+    "incidentDetails": {
+      "dateTime": "2026-01-21T08:15:00Z",
+      "location": "Home garage, Detroit, MI",
+      "description": "Hit the garage wall while pulling in.",
+      "type": "Collision",
+      "speedOfTravel": "3 mph"
+    },
+    "otherParties": [],
+    "policeReport": {
+      "reportNumber": "N/A",
+      "wasPoliceCalled": "No"
+    },
+    "damageDetails": {
+      "description": "Front bumper cracked, grille broken, minor hood dent.",
+      "isDrivable": "Yes",
+      "personalPropertyDamaged": "No",
+      "priorExistingDamage": "No"
+    },
+    "repairInfo": {
+      "preferredShop": "N/A",
+      "estimatesObtained": "No",
+      "towingReceipts": "No",
+      "rentalCarNeeds": "No"
+    },
+    "injuryInfo": {
+      "wasAnyoneInjured": "No",
+      "injuryDescription": "N/A",
+      "medicalProvider": "N/A"
+    },
+    "theftInfo": {
+      "proofOfOwnership": "N/A",
+      "stolenItems": "N/A",
+      "spareKeyConfirmation": "N/A"
+    },
+    "vehicleImageUrl": "/home/ubuntu/mock_images/raw/car_damage_07.jpg",
+    "annotatedVehicleImageUrl": "/home/ubuntu/mock_images/annotated/car_damage_07_annotated.jpg",
+    "aiAssessment": {
+      "confidenceScore": 0.93,
+      "totalEstimatedCost": 1750,
+      "isTotalLoss": false,
+      "damages": [
+        {"type": "Grille", "location": "Front Grille", "severity": "High", "estimatedCost": 450},
+        {"type": "Bumper Damage", "location": "Front Bumper", "severity": "Medium", "estimatedCost": 680},
+        {"type": "Hood Damage", "location": "Hood", "severity": "Low", "estimatedCost": 620}
+      ]
+    }
+  },
+  {
+    "id": "CLM-008",
+    "policyInfo": {
+      "policyNumber": "OH-987654321",
+      "vehicleDetails": {
+        "licensePlate": "STU789",
+        "vin": "8G1RB6E58F123463",
+        "make": "Toyota",
+        "model": "Corolla",
+        "year": 2002
+      },
+      "driverName": "Linda Martinez",
+      "driverContact": "linda.martinez@email.com",
+      "driverLicense": {
+        "number": "M8765432",
+        "state": "OH"
+      },
+      "wasPolicyholderDriving": "Yes",
+      "estimatedVehicleValue": 4000,
+      "totalLossThreshold": 0.75
+    },
+    "incidentDetails": {
+      "dateTime": "2026-01-22T22:00:00Z",
+      "location": "Street parking, Cleveland, OH",
+      "description": "Vehicle was vandalized overnight. Side keyed and mirror broken.",
+      "type": "Vandalism",
+      "speedOfTravel": "0 mph"
+    },
+    "otherParties": [],
+    "policeReport": {
+      "reportNumber": "CL-2026-009876",
+      "wasPoliceCalled": "Yes"
+    },
+    "damageDetails": {
+      "description": "Deep scratch along driver side, side mirror broken off, dent in door.",
+      "isDrivable": "Yes",
+      "personalPropertyDamaged": "No",
+      "priorExistingDamage": "No"
+    },
+    "repairInfo": {
+      "preferredShop": "N/A",
+      "estimatesObtained": "No",
+      "towingReceipts": "No",
+      "rentalCarNeeds": "No"
+    },
+    "injuryInfo": {
+      "wasAnyoneInjured": "No",
+      "injuryDescription": "N/A",
+      "medicalProvider": "N/A"
+    },
+    "theftInfo": {
+      "proofOfOwnership": "N/A",
+      "stolenItems": "N/A",
+      "spareKeyConfirmation": "N/A"
+    },
+    "vehicleImageUrl": "/home/ubuntu/mock_images/raw/car_damage_08.jpg",
+    "annotatedVehicleImageUrl": "/home/ubuntu/mock_images/annotated/car_damage_08_annotated.jpg",
+    "aiAssessment": {
+      "confidenceScore": 0.97,
+      "totalEstimatedCost": 2240,
+      "isTotalLoss": false,
+      "damages": [
+        {"type": "Paint/Body Work", "location": "Left Side", "severity": "High", "estimatedCost": 1200},
+        {"type": "Side Mirror", "location": "Left Side Mirror", "severity": "High", "estimatedCost": 340},
+        {"type": "Door Panel", "location": "Front Left Door", "severity": "Medium", "estimatedCost": 700}
+      ]
+    }
+  },
+  {
+    "id": "CLM-009",
+    "policyInfo": {
+      "policyNumber": "PA-111222333",
+      "vehicleDetails": {
+        "licensePlate": "VWX012",
+        "vin": "9G1RB6E58F123464",
+        "make": "Chevrolet",
+        "model": "Equinox",
+        "year": 2019
+      },
+      "driverName": "James Taylor",
+      "driverContact": "james.taylor@email.com",
+      "driverLicense": {
+        "number": "T1234567",
+        "state": "PA"
+      },
+      "wasPolicyholderDriving": "Yes",
+      "estimatedVehicleValue": 22000,
+      "totalLossThreshold": 0.75
+    },
+    "incidentDetails": {
+      "dateTime": "2026-01-23T15:30:00Z",
+      "location": "Home driveway, Philadelphia, PA",
+      "description": "Vehicle was caught in a flash flood.",
+      "type": "Weather Damage",
+      "speedOfTravel": "0 mph"
+    },
+    "otherParties": [],
+    "policeReport": {
+      "reportNumber": "N/A",
+      "wasPoliceCalled": "No"
+    },
+    "damageDetails": {
+      "description": "Water damage to interior and engine compartment.",
+      "isDrivable": "No",
+      "personalPropertyDamaged": "Yes - laptop in trunk",
+      "priorExistingDamage": "No"
+    },
+    "repairInfo": {
+      "preferredShop": "N/A",
+      "estimatesObtained": "No",
+      "towingReceipts": "Yes",
+      "rentalCarNeeds": "Yes"
+    },
+    "injuryInfo": {
+      "wasAnyoneInjured": "No",
+      "injuryDescription": "N/A",
+      "medicalProvider": "N/A"
+    },
+    "theftInfo": {
+      "proofOfOwnership": "N/A",
+      "stolenItems": "N/A",
+      "spareKeyConfirmation": "N/A"
+    },
+    "vehicleImageUrl": "/home/ubuntu/mock_images/raw/car_damage_09.jpg",
+    "annotatedVehicleImageUrl": "/home/ubuntu/mock_images/annotated/car_damage_09_annotated.jpg",
+    "aiAssessment": {
+      "confidenceScore": 0.85,
+      "totalEstimatedCost": 5650,
+      "isTotalLoss": false,
+      "damages": [
+        {"type": "Interior Water Damage", "location": "Interior", "severity": "High", "estimatedCost": 2800},
+        {"type": "Engine/Electrical", "location": "Engine Compartment", "severity": "High", "estimatedCost": 1950},
+        {"type": "Exterior Cleaning", "location": "Exterior", "severity": "Low", "estimatedCost": 900}
+      ]
+    }
+  },
+  {
+    "id": "CLM-010",
+    "policyInfo": {
+      "policyNumber": "WA-444555666",
+      "vehicleDetails": {
+        "licensePlate": "YZA345",
+        "vin": "AG1RB6E58F123465",
+        "make": "Tesla",
+        "model": "Model S",
+        "year": 2022
+      },
+      "driverName": "Patricia Anderson",
+      "driverContact": "patricia.anderson@email.com",
+      "driverLicense": {
+        "number": "A1234567",
+        "state": "WA"
+      },
+      "wasPolicyholderDriving": "Yes",
+      "estimatedVehicleValue": 85000,
+      "totalLossThreshold": 0.75
+    },
+    "incidentDetails": {
+      "dateTime": "2026-01-24T17:00:00Z",
+      "location": "I-5, Seattle, WA",
+      "description": "Severe rear-end collision in heavy traffic.",
+      "type": "Collision",
+      "speedOfTravel": "25 mph"
+    },
+    "otherParties": [
+      {
+        "name": "Charles Thomas",
+        "contact": "N/A",
+        "policyNumber": "UNKNOWN",
+        "vehicleDetails": "Ford F-150, Black"
+      }
+    ],
+    "policeReport": {
+      "reportNumber": "SEA-2026-011223",
+      "wasPoliceCalled": "Yes"
+    },
+    "damageDetails": {
+      "description": "Rear of vehicle completely crushed, battery pack may be damaged.",
+      "isDrivable": "No",
+      "personalPropertyDamaged": "No",
+      "priorExistingDamage": "No"
+    },
+    "repairInfo": {
+      "preferredShop": "Tesla Service Center",
+      "estimatesObtained": "No",
+      "towingReceipts": "Yes",
+      "rentalCarNeeds": "Yes"
+    },
+    "injuryInfo": {
+      "wasAnyoneInjured": "Yes",
+      "injuryDescription": "Driver reported back pain.",
+      "medicalProvider": "Harborview Medical Center"
+    },
+    "theftInfo": {
+      "proofOfOwnership": "N/A",
+      "stolenItems": "N/A",
+      "spareKeyConfirmation": "N/A"
+    },
+    "vehicleImageUrl": "/home/ubuntu/mock_images/raw/car_damage_10.jpg",
+    "annotatedVehicleImageUrl": "/home/ubuntu/mock_images/annotated/car_damage_10_annotated.jpg",
+    "aiAssessment": {
+      "confidenceScore": 0.90,
+      "totalEstimatedCost": 17500,
+      "isTotalLoss": false,
+      "damages": [
+        {"type": "Rear Body Structure", "location": "Rear Body", "severity": "High", "estimatedCost": 8500},
+        {"type": "Battery System", "location": "Battery Pack", "severity": "High", "estimatedCost": 6200},
+        {"type": "Tail Light", "location": "Rear Tail Lights", "severity": "High", "estimatedCost": 2800}
+      ]
+    }
+  },
+  {
+    "id": "CLM-011",
+    "policyInfo": {
+      "policyNumber": "CO-333444555",
+      "vehicleDetails": {
+        "licensePlate": "BCD678",
+        "vin": "BG1RB6E58F123466",
+        "make": "Jeep",
+        "model": "Grand Cherokee",
+        "year": 2018
+      },
+      "driverName": "Michael Clark",
+      "driverContact": "michael.clark@email.com",
+      "driverLicense": {
+        "number": "C1234567",
+        "state": "CO"
+      },
+      "wasPolicyholderDriving": "Yes",
+      "estimatedVehicleValue": 25000,
+      "totalLossThreshold": 0.75
+    },
+    "incidentDetails": {
+      "dateTime": "2026-01-25T06:30:00Z",
+      "location": "US-36, near Estes Park, CO",
+      "description": "Struck a deer at highway speed.",
+      "type": "Animal Strike",
+      "speedOfTravel": "55 mph"
+    },
+    "otherParties": [],
+    "policeReport": {
+      "reportNumber": "EP-2026-000123",
+      "wasPoliceCalled": "Yes"
+    },
+    "damageDetails": {
+      "description": "Front grille destroyed, headlight broken, hood dented.",
+      "isDrivable": "Yes",
+      "personalPropertyDamaged": "No",
+      "priorExistingDamage": "No"
+    },
+    "repairInfo": {
+      "preferredShop": "N/A",
+      "estimatesObtained": "No",
+      "towingReceipts": "No",
+      "rentalCarNeeds": "No"
+    },
+    "injuryInfo": {
+      "wasAnyoneInjured": "No",
+      "injuryDescription": "N/A",
+      "medicalProvider": "N/A"
+    },
+    "theftInfo": {
+      "proofOfOwnership": "N/A",
+      "stolenItems": "N/A",
+      "spareKeyConfirmation": "N/A"
+    },
+    "vehicleImageUrl": "/home/ubuntu/mock_images/raw/car_damage_11.jpg",
+    "annotatedVehicleImageUrl": "/home/ubuntu/mock_images/annotated/car_damage_11_annotated.jpg",
+    "aiAssessment": {
+      "confidenceScore": 0.94,
+      "totalEstimatedCost": 3020,
+      "isTotalLoss": false,
+      "damages": [
+        {"type": "Grille", "location": "Front Grille", "severity": "High", "estimatedCost": 520},
+        {"type": "Headlight", "location": "Right Headlight", "severity": "High", "estimatedCost": 680},
+        {"type": "Hood Damage", "location": "Hood", "severity": "Medium", "estimatedCost": 1820}
+      ]
+    }
+  },
+  {
+    "id": "CLM-012",
+    "policyInfo": {
+      "policyNumber": "GA-666777888",
+      "vehicleDetails": {
+        "licensePlate": "EFG901",
+        "vin": "CG1RB6E58F123467",
+        "make": "Chevrolet",
+        "model": "Cruze",
+        "year": 2015
+      },
+      "driverName": "Barbara Lewis",
+      "driverContact": "barbara.lewis@email.com",
+      "driverLicense": {
+        "number": "L1234567",
+        "state": "GA"
+      },
+      "wasPolicyholderDriving": "Yes",
+      "estimatedVehicleValue": 6000,
+      "totalLossThreshold": 0.75
+    },
+    "incidentDetails": {
+      "dateTime": "2026-01-26T19:00:00Z",
+      "location": "Apartment complex parking, Atlanta, GA",
+      "description": "Engine fire, cause unknown.",
+      "type": "Fire",
+      "speedOfTravel": "0 mph"
+    },
+    "otherParties": [],
+    "policeReport": {
+      "reportNumber": "ATL-2026-013579",
+      "wasPoliceCalled": "Yes"
+    },
+    "damageDetails": {
+      "description": "Engine compartment and front interior burned.",
+      "isDrivable": "No",
+      "personalPropertyDamaged": "No",
+      "priorExistingDamage": "No"
+    },
+    "repairInfo": {
+      "preferredShop": "N/A",
+      "estimatesObtained": "No",
+      "towingReceipts": "Yes",
+      "rentalCarNeeds": "Yes"
+    },
+    "injuryInfo": {
+      "wasAnyoneInjured": "No",
+      "injuryDescription": "N/A",
+      "medicalProvider": "N/A"
+    },
+    "theftInfo": {
+      "proofOfOwnership": "N/A",
+      "stolenItems": "N/A",
+      "spareKeyConfirmation": "N/A"
+    },
+    "vehicleImageUrl": "/home/ubuntu/mock_images/raw/car_damage_12.jpg",
+    "annotatedVehicleImageUrl": "/home/ubuntu/mock_images/annotated/car_damage_12_annotated.jpg",
+    "aiAssessment": {
+      "confidenceScore": 0.99,
+      "totalEstimatedCost": 10350,
+      "isTotalLoss": true,
+      "damages": [
+        {"type": "Engine/Electrical", "location": "Engine Compartment", "severity": "High", "estimatedCost": 4500},
+        {"type": "Interior Fire Damage", "location": "Interior", "severity": "High", "estimatedCost": 3200},
+        {"type": "Body Panels", "location": "Front Body Panels", "severity": "High", "estimatedCost": 2650}
+      ]
+    }
+  },
+  {
+    "id": "CLM-013",
+    "policyInfo": {
+      "policyNumber": "NC-999888777",
+      "vehicleDetails": {
+        "licensePlate": "HIJ234",
+        "vin": "DG1RB6E58F123468",
+        "make": "Nissan",
+        "model": "Sentra",
+        "year": 2017
+      },
+      "driverName": "Paul Walker",
+      "driverContact": "paul.walker@email.com",
+      "driverLicense": {
+        "number": "W1234567",
+        "state": "NC"
+      },
+      "wasPolicyholderDriving": "Yes",
+      "estimatedVehicleValue": 10000,
+      "totalLossThreshold": 0.75
+    },
+    "incidentDetails": {
+      "dateTime": "2026-01-27T13:45:00Z",
+      "location": "Driveway, Raleigh, NC",
+      "description": "Large tree branch fell on car during a storm.",
+      "type": "Weather Damage",
+      "speedOfTravel": "0 mph"
+    },
+    "otherParties": [],
+    "policeReport": {
+      "reportNumber": "N/A",
+      "wasPoliceCalled": "No"
+    },
+    "damageDetails": {
+      "description": "Roof crushed, windshield shattered, hood damaged.",
+      "isDrivable": "No",
+      "personalPropertyDamaged": "No",
+      "priorExistingDamage": "No"
+    },
+    "repairInfo": {
+      "preferredShop": "N/A",
+      "estimatesObtained": "No",
+      "towingReceipts": "Yes",
+      "rentalCarNeeds": "Yes"
+    },
+    "injuryInfo": {
+      "wasAnyoneInjured": "No",
+      "injuryDescription": "N/A",
+      "medicalProvider": "N/A"
+    },
+    "theftInfo": {
+      "proofOfOwnership": "N/A",
+      "stolenItems": "N/A",
+      "spareKeyConfirmation": "N/A"
+    },
+    "vehicleImageUrl": "/home/ubuntu/mock_images/raw/car_damage_13.jpg",
+    "annotatedVehicleImageUrl": "/home/ubuntu/mock_images/annotated/car_damage_13_annotated.jpg",
+    "aiAssessment": {
+      "confidenceScore": 0.97,
+      "totalEstimatedCost": 6170,
+      "isTotalLoss": false,
+      "damages": [
+        {"type": "Roof Structure", "location": "Roof", "severity": "High", "estimatedCost": 3200},
+        {"type": "Windshield", "location": "Windshield", "severity": "High", "estimatedCost": 850},
+        {"type": "Hood Damage", "location": "Hood", "severity": "Medium", "estimatedCost": 2120}
+      ]
+    }
+  },
+  {
+    "id": "CLM-014",
+    "policyInfo": {
+      "policyNumber": "VA-555666777",
+      "vehicleDetails": {
+        "licensePlate": "KLM567",
+        "vin": "EG1RB6E58F123469",
+        "make": "BMW",
+        "model": "3 Series",
+        "year": 2019
+      },
+      "driverName": "Nancy Allen",
+      "driverContact": "nancy.allen@email.com",
+      "driverLicense": {
+        "number": "A1234567",
+        "state": "VA"
+      },
+      "wasPolicyholderDriving": "Yes",
+      "estimatedVehicleValue": 32000,
+      "totalLossThreshold": 0.75
+    },
+    "incidentDetails": {
+      "dateTime": "2026-01-28T03:00:00Z",
+      "location": "Parking garage, Richmond, VA",
+      "description": "Attempted theft. Window smashed, door lock broken, steering column damaged.",
+      "type": "Theft",
+      "speedOfTravel": "0 mph"
+    },
+    "otherParties": [],
+    "policeReport": {
+      "reportNumber": "RIC-2026-002468",
+      "wasPoliceCalled": "Yes"
+    },
+    "damageDetails": {
+      "description": "Driver side window shattered, door lock punched out, steering column plastic broken.",
+      "isDrivable": "Yes",
+      "personalPropertyDamaged": "No",
+      "priorExistingDamage": "No"
+    },
+    "repairInfo": {
+      "preferredShop": "BMW of Richmond",
+      "estimatesObtained": "No",
+      "towingReceipts": "No",
+      "rentalCarNeeds": "No"
+    },
+    "injuryInfo": {
+      "wasAnyoneInjured": "No",
+      "injuryDescription": "N/A",
+      "medicalProvider": "N/A"
+    },
+    "theftInfo": {
+      "proofOfOwnership": "Yes",
+      "stolenItems": "No",
+      "spareKeyConfirmation": "Yes"
+    },
+    "vehicleImageUrl": "/home/ubuntu/mock_images/raw/car_damage_14.jpg",
+    "annotatedVehicleImageUrl": "/home/ubuntu/mock_images/annotated/car_damage_14_annotated.jpg",
+    "aiAssessment": {
+      "confidenceScore": 0.98,
+      "totalEstimatedCost": 2520,
+      "isTotalLoss": false,
+      "damages": [
+        {"type": "Window", "location": "Front Left Window", "severity": "High", "estimatedCost": 580},
+        {"type": "Door Lock/Handle", "location": "Front Left Door", "severity": "High", "estimatedCost": 890},
+        {"type": "Steering Column", "location": "Steering Column", "severity": "Medium", "estimatedCost": 1050}
+      ]
+    }
+  },
+  {
+    "id": "CLM-015",
+    "policyInfo": {
+      "policyNumber": "MD-888999000",
+      "vehicleDetails": {
+        "licensePlate": "NOP890",
+        "vin": "FG1RB6E58F123470",
+        "make": "Toyota",
+        "model": "RAV4",
+        "year": 2020
+      },
+      "driverName": "Karen Young",
+      "driverContact": "karen.young@email.com",
+      "driverLicense": {
+        "number": "Y1234567",
+        "state": "MD"
+      },
+      "wasPolicyholderDriving": "Yes",
+      "estimatedVehicleValue": 28000,
+      "totalLossThreshold": 0.75
+    },
+    "incidentDetails": {
+      "dateTime": "2026-01-29T12:00:00Z",
+      "location": "Target parking lot, Baltimore, MD",
+      "description": "Hit and run. Came back to find rear quarter panel damaged.",
+      "type": "Hit and Run",
+      "speedOfTravel": "0 mph"
+    },
+    "otherParties": [],
+    "policeReport": {
+      "reportNumber": "BAL-2026-003690",
+      "wasPoliceCalled": "Yes"
+    },
+    "damageDetails": {
+      "description": "Rear right quarter panel dented and scratched, tail light cracked, bumper scraped.",
+      "isDrivable": "Yes",
+      "personalPropertyDamaged": "No",
+      "priorExistingDamage": "No"
+    },
+    "repairInfo": {
+      "preferredShop": "N/A",
+      "estimatesObtained": "No",
+      "towingReceipts": "No",
+      "rentalCarNeeds": "No"
+    },
+    "injuryInfo": {
+      "wasAnyoneInjured": "No",
+      "injuryDescription": "N/A",
+      "medicalProvider": "N/A"
+    },
+    "theftInfo": {
+      "proofOfOwnership": "N/A",
+      "stolenItems": "N/A",
+      "spareKeyConfirmation": "N/A"
+    },
+    "vehicleImageUrl": "/home/ubuntu/mock_images/raw/car_damage_15.jpg",
+    "annotatedVehicleImageUrl": "/home/ubuntu/mock_images/annotated/car_damage_15_annotated.jpg",
+    "aiAssessment": {
+      "confidenceScore": 0.96,
+      "totalEstimatedCost": 3040,
+      "isTotalLoss": false,
+      "damages": [
+        {"type": "Quarter Panel", "location": "Rear Right Quarter Panel", "severity": "High", "estimatedCost": 1980},
+        {"type": "Tail Light", "location": "Right Tail Light", "severity": "Medium", "estimatedCost": 340},
+        {"type": "Bumper Damage", "location": "Rear Bumper", "severity": "Low", "estimatedCost": 720}
+      ]
+    }
+  },
+  {
+    "id": "CLM-016",
+    "policyInfo": {
+      "policyNumber": "CA-111222333",
+      "vehicleDetails": {
+        "licensePlate": "9GHI456",
+        "vin": "HG1RB6E58F123471",
+        "make": "Chevrolet",
+        "model": "Malibu",
+        "year": 2018
+      },
+      "driverName": "Steven King",
+      "driverContact": "steven.king@email.com",
+      "driverLicense": {
+        "number": "K1234567",
+        "state": "CA"
+      },
+      "wasPolicyholderDriving": "Yes",
+      "estimatedVehicleValue": 12000,
+      "totalLossThreshold": 0.75
+    },
+    "incidentDetails": {
+      "dateTime": "2026-01-30T07:45:00Z",
+      "location": "I-15, near Barstow, CA",
+      "description": "Head-on collision with another vehicle.",
+      "type": "Collision",
+      "speedOfTravel": "65 mph"
+    },
+    "otherParties": [
+      {
+        "name": "Laura Rodriguez",
+        "contact": "N/A",
+        "policyNumber": "UNKNOWN",
+        "vehicleDetails": "Honda Civic, White"
+      }
+    ],
+    "policeReport": {
+      "reportNumber": "BAR-2026-000456",
+      "wasPoliceCalled": "Yes"
+    },
+    "damageDetails": {
+      "description": "Front of vehicle completely destroyed, engine pushed back, frame bent.",
+      "isDrivable": "No",
+      "personalPropertyDamaged": "No",
+      "priorExistingDamage": "No"
+    },
+    "repairInfo": {
+      "preferredShop": "N/A",
+      "estimatesObtained": "No",
+      "towingReceipts": "Yes",
+      "rentalCarNeeds": "Yes"
+    },
+    "injuryInfo": {
+      "wasAnyoneInjured": "Yes",
+      "injuryDescription": "Driver sustained broken arm and concussion.",
+      "medicalProvider": "Barstow Community Hospital"
+    },
+    "theftInfo": {
+      "proofOfOwnership": "N/A",
+      "stolenItems": "N/A",
+      "spareKeyConfirmation": "N/A"
+    },
+    "vehicleImageUrl": "/home/ubuntu/mock_images/raw/car_damage_16.jpg",
+    "annotatedVehicleImageUrl": "/home/ubuntu/mock_images/annotated/car_damage_16_annotated.jpg",
+    "aiAssessment": {
+      "confidenceScore": 0.99,
+      "totalEstimatedCost": 26500,
+      "isTotalLoss": true,
+      "damages": [
+        {"type": "Front Structure", "location": "Front End", "severity": "High", "estimatedCost": 18500},
+        {"type": "Airbag System", "location": "Interior", "severity": "High", "estimatedCost": 4200},
+        {"type": "Suspension", "location": "Front Suspension", "severity": "High", "estimatedCost": 3800}
+      ]
+    }
+  },
+  {
+    "id": "CLM-017",
+    "policyInfo": {
+      "policyNumber": "OR-444555666",
+      "vehicleDetails": {
+        "licensePlate": "LMN789",
+        "vin": "IG1RB6E58F123472",
+        "make": "Kia",
+        "model": "Sportage",
+        "year": 2019
+      },
+      "driverName": "Donna Harris",
+      "driverContact": "donna.harris@email.com",
+      "driverLicense": {
+        "number": "H1234567",
+        "state": "OR"
+      },
+      "wasPolicyholderDriving": "Yes",
+      "estimatedVehicleValue": 22000,
+      "totalLossThreshold": 0.75
+    },
+    "incidentDetails": {
+      "dateTime": "2026-01-31T14:20:00Z",
+      "location": "OR-217, near Beaverton, OR",
+      "description": "Swerved to avoid debris and rolled vehicle.",
+      "type": "Rollover",
+      "speedOfTravel": "60 mph"
+    },
+    "otherParties": [],
+    "policeReport": {
+      "reportNumber": "BEA-2026-000789",
+      "wasPoliceCalled": "Yes"
+    },
+    "damageDetails": {
+      "description": "Roof crushed, all body panels damaged, all glass broken.",
+      "isDrivable": "No",
+      "personalPropertyDamaged": "No",
+      "priorExistingDamage": "No"
+    },
+    "repairInfo": {
+      "preferredShop": "N/A",
+      "estimatesObtained": "No",
+      "towingReceipts": "Yes",
+      "rentalCarNeeds": "Yes"
+    },
+    "injuryInfo": {
+      "wasAnyoneInjured": "Yes",
+      "injuryDescription": "Minor cuts and bruises.",
+      "medicalProvider": "Providence St. Vincent Medical Center"
+    },
+    "theftInfo": {
+      "proofOfOwnership": "N/A",
+      "stolenItems": "N/A",
+      "spareKeyConfirmation": "N/A"
+    },
+    "vehicleImageUrl": "/home/ubuntu/mock_images/raw/car_damage_17.jpg",
+    "annotatedVehicleImageUrl": "/home/ubuntu/mock_images/annotated/car_damage_17_annotated.jpg",
+    "aiAssessment": {
+      "confidenceScore": 0.99,
+      "totalEstimatedCost": 29500,
+      "isTotalLoss": true,
+      "damages": [
+        {"type": "Roof/Pillars", "location": "Roof Structure", "severity": "High", "estimatedCost": 15000},
+        {"type": "Body Panels", "location": "All Body Panels", "severity": "High", "estimatedCost": 12000},
+        {"type": "All Glass", "location": "All Windows", "severity": "High", "estimatedCost": 2500}
+      ]
+    }
+  },
+  {
+    "id": "CLM-018",
+    "policyInfo": {
+      "policyNumber": "LA-777888999",
+      "vehicleDetails": {
+        "licensePlate": "OPQ012",
+        "vin": "JG1RB6E58F123473",
+        "make": "Volkswagen",
+        "model": "Golf",
+        "year": 2017
+      },
+      "driverName": "George Nelson",
+      "driverContact": "george.nelson@email.com",
+      "driverLicense": {
+        "number": "N1234567",
+        "state": "LA"
+      },
+      "wasPolicyholderDriving": "Yes",
+      "estimatedVehicleValue": 11000,
+      "totalLossThreshold": 0.75
+    },
+    "incidentDetails": {
+      "dateTime": "2026-02-01T10:00:00Z",
+      "location": "French Quarter, New Orleans, LA",
+      "description": "Vehicle submerged in flash flood.",
+      "type": "Flood",
+      "speedOfTravel": "0 mph"
+    },
+    "otherParties": [],
+    "policeReport": {
+      "reportNumber": "NOLA-2026-004321",
+      "wasPoliceCalled": "Yes"
+    },
+    "damageDetails": {
+      "description": "Complete interior and electrical system destroyed by water.",
+      "isDrivable": "No",
+      "personalPropertyDamaged": "Yes - electronics and personal items",
+      "priorExistingDamage": "No"
+    },
+    "repairInfo": {
+      "preferredShop": "N/A",
+      "estimatesObtained": "No",
+      "towingReceipts": "Yes",
+      "rentalCarNeeds": "Yes"
+    },
+    "injuryInfo": {
+      "wasAnyoneInjured": "No",
+      "injuryDescription": "N/A",
+      "medicalProvider": "N/A"
+    },
+    "theftInfo": {
+      "proofOfOwnership": "N/A",
+      "stolenItems": "N/A",
+      "spareKeyConfirmation": "N/A"
+    },
+    "vehicleImageUrl": "/home/ubuntu/mock_images/raw/car_damage_18.jpg",
+    "annotatedVehicleImageUrl": "/home/ubuntu/mock_images/annotated/car_damage_18_annotated.jpg",
+    "aiAssessment": {
+      "confidenceScore": 0.99,
+      "totalEstimatedCost": 24500,
+      "isTotalLoss": true,
+      "damages": [
+        {"type": "Interior", "location": "Complete Interior", "severity": "High", "estimatedCost": 8500},
+        {"type": "Electrical/ECU", "location": "All Electrical Systems", "severity": "High", "estimatedCost": 6200},
+        {"type": "Engine/Transmission", "location": "Engine and Transmission", "severity": "High", "estimatedCost": 9800}
+      ]
+    }
+  },
+  {
+    "id": "CLM-019",
+    "policyInfo": {
+      "policyNumber": "KS-111222333",
+      "vehicleDetails": {
+        "licensePlate": "RST345",
+        "vin": "KG1RB6E58F123474",
+        "make": "Ford",
+        "model": "F-150",
+        "year": 2020
+      },
+      "driverName": "Edward Perez",
+      "driverContact": "edward.perez@email.com",
+      "driverLicense": {
+        "number": "P1234567",
+        "state": "KS"
+      },
+      "wasPolicyholderDriving": "Yes",
+      "estimatedVehicleValue": 28000,
+      "totalLossThreshold": 0.75
+    },
+    "incidentDetails": {
+      "dateTime": "2026-02-02T16:30:00Z",
+      "location": "I-70, near Topeka, KS",
+      "description": "T-boned by a semi-truck that ran a red light.",
+      "type": "Collision",
+      "speedOfTravel": "45 mph"
+    },
+    "otherParties": [
+      {
+        "name": "Trucking Company Inc.",
+        "contact": "N/A",
+        "policyNumber": "UNKNOWN",
+        "vehicleDetails": "Peterbilt Semi-Truck, Blue"
+      }
+    ],
+    "policeReport": {
+      "reportNumber": "TOP-2026-000987",
+      "wasPoliceCalled": "Yes"
+    },
+    "damageDetails": {
+      "description": "Driver side of cab crushed, frame bent, doors will not open.",
+      "isDrivable": "No",
+      "personalPropertyDamaged": "No",
+      "priorExistingDamage": "No"
+    },
+    "repairInfo": {
+      "preferredShop": "N/A",
+      "estimatesObtained": "No",
+      "towingReceipts": "Yes",
+      "rentalCarNeeds": "Yes"
+    },
+    "injuryInfo": {
+      "wasAnyoneInjured": "Yes",
+      "injuryDescription": "Driver has multiple fractures.",
+      "medicalProvider": "Stormont Vail Health"
+    },
+    "theftInfo": {
+      "proofOfOwnership": "N/A",
+      "stolenItems": "N/A",
+      "spareKeyConfirmation": "N/A"
+    },
+    "vehicleImageUrl": "/home/ubuntu/mock_images/raw/car_damage_19.jpg",
+    "annotatedVehicleImageUrl": "/home/ubuntu/mock_images/annotated/car_damage_19_annotated.jpg",
+    "aiAssessment": {
+      "confidenceScore": 0.99,
+      "totalEstimatedCost": 42500,
+      "isTotalLoss": true,
+      "damages": [
+        {"type": "Cab Structure", "location": "Driver Side Cab", "severity": "High", "estimatedCost": 22000},
+        {"type": "Frame Damage", "location": "Frame", "severity": "High", "estimatedCost": 15000},
+        {"type": "Doors/Pillars", "location": "Driver Side Doors and Pillars", "severity": "High", "estimatedCost": 5500}
+      ]
+    }
+  },
+  {
+    "id": "CLM-020",
+    "policyInfo": {
+      "policyNumber": "NV-444555666",
+      "vehicleDetails": {
+        "licensePlate": "UVW678",
+        "vin": "LG1RB6E58F123475",
+        "make": "BMW",
+        "model": "7 Series",
+        "year": 2021
+      },
+      "driverName": "Sandra Scott",
+      "driverContact": "sandra.scott@email.com",
+      "driverLicense": {
+        "number": "S1234567",
+        "state": "NV"
+      },
+      "wasPolicyholderDriving": "Yes",
+      "estimatedVehicleValue": 55000,
+      "totalLossThreshold": 0.75
+    },
+    "incidentDetails": {
+      "dateTime": "2026-02-03T23:00:00Z",
+      "location": "Casino parking garage, Las Vegas, NV",
+      "description": "Vehicle completely destroyed by fire.",
+      "type": "Fire",
+      "speedOfTravel": "0 mph"
+    },
+    "otherParties": [],
+    "policeReport": {
+      "reportNumber": "LV-2026-007890",
+      "wasPoliceCalled": "Yes"
+    },
+    "damageDetails": {
+      "description": "Vehicle is a total burn-out. Only metal shell remains.",
+      "isDrivable": "No",
+      "personalPropertyDamaged": "Yes - all contents destroyed",
+      "priorExistingDamage": "No"
+    },
+    "repairInfo": {
+      "preferredShop": "N/A",
+      "estimatesObtained": "No",
+      "towingReceipts": "Yes",
+      "rentalCarNeeds": "Yes"
+    },
+    "injuryInfo": {
+      "wasAnyoneInjured": "No",
+      "injuryDescription": "N/A",
+      "medicalProvider": "N/A"
+    },
+    "theftInfo": {
+      "proofOfOwnership": "N/A",
+      "stolenItems": "N/A",
+      "spareKeyConfirmation": "N/A"
+    },
+    "vehicleImageUrl": "/home/ubuntu/mock_images/raw/car_damage_20.jpg",
+    "annotatedVehicleImageUrl": "/home/ubuntu/mock_images/annotated/car_damage_20_annotated.jpg",
+    "aiAssessment": {
+      "confidenceScore": 1.0,
+      "totalEstimatedCost": 55000,
+      "isTotalLoss": true,
+      "damages": [
+        {"type": "Complete Vehicle Destruction", "location": "Entire Vehicle", "severity": "High", "estimatedCost": 55000}
+      ]
+    }
+  }
+]

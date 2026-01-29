@@ -1,0 +1,558 @@
+
+{
+  "damageTypes": [
+    {
+      "type": "Bumper Damage",
+      "averageCost": 1150,
+      "costRange": {
+        "min": 450,
+        "max": 2500
+      },
+      "dataSources": [
+        {
+          "source": "Internal Claims Database",
+          "recordCount": 12543,
+          "averageCost": 1120,
+          "notes": "Based on approved claims over the last 24 months."
+        },
+        {
+          "source": "Audatex Repair Manuals",
+          "recordCount": "N/A",
+          "averageCost": 1250,
+          "notes": "Standardized parts and labor estimates for common vehicle models."
+        },
+        {
+          "source": "National Repair Shop Network Data",
+          "recordCount": 8765,
+          "averageCost": 1180,
+          "notes": "Aggregated data from partner repair facilities."
+        }
+      ]
+    },
+    {
+      "type": "Hood Damage",
+      "averageCost": 1100,
+      "costRange": {
+        "min": 500,
+        "max": 3500
+      },
+      "dataSources": [
+        {
+          "source": "Internal Claims Database",
+          "recordCount": 9876,
+          "averageCost": 1050,
+          "notes": "Includes both repair and replacement scenarios."
+        },
+        {
+          "source": "Audatex Repair Manuals",
+          "recordCount": "N/A",
+          "averageCost": 1200,
+          "notes": "Estimates vary significantly based on material (steel, aluminum)."
+        },
+        {
+          "source": "National Repair Shop Network Data",
+          "recordCount": 6543,
+          "averageCost": 1150,
+          "notes": "Higher costs associated with luxury brands."
+        }
+      ]
+    },
+    {
+      "type": "Headlight",
+      "averageCost": 550,
+      "costRange": {
+        "min": 250,
+        "max": 1800
+      },
+      "dataSources": [
+        {
+          "source": "Internal Claims Database",
+          "recordCount": 15321,
+          "averageCost": 520,
+          "notes": "Cost is highly dependent on technology (Halogen, LED, Laser)."
+        },
+        {
+          "source": "Audatex Repair Manuals",
+          "recordCount": "N/A",
+          "averageCost": 600,
+          "notes": "OEM part costs are the primary driver."
+        },
+        {
+          "source": "National Repair Shop Network Data",
+          "recordCount": 11234,
+          "averageCost": 580,
+          "notes": "Aftermarket parts can reduce cost by up to 40%."
+        }
+      ]
+    },
+    {
+      "type": "Tailgate",
+      "averageCost": 1600,
+      "costRange": {
+        "min": 700,
+        "max": 4500
+      },
+      "dataSources": [
+        {
+          "source": "Internal Claims Database",
+          "recordCount": 4321,
+          "averageCost": 1550,
+          "notes": "Includes camera and sensor recalibration costs."
+        },
+        {
+          "source": "Audatex Repair Manuals",
+          "recordCount": "N/A",
+          "averageCost": 1700,
+          "notes": "Power liftgate mechanisms significantly increase cost."
+        },
+        {
+          "source": "National Repair Shop Network Data",
+          "recordCount": 3210,
+          "averageCost": 1650,
+          "notes": "Labor for alignment is a key factor."
+        }
+      ]
+    },
+    {
+      "type": "Tail Light",
+      "averageCost": 350,
+      "costRange": {
+        "min": 150,
+        "max": 1200
+      },
+      "dataSources": [
+        {
+          "source": "Internal Claims Database",
+          "recordCount": 18765,
+          "averageCost": 330,
+          "notes": "LED and complex assemblies are more expensive."
+        },
+        {
+          "source": "Audatex Repair Manuals",
+          "recordCount": "N/A",
+          "averageCost": 380,
+          "notes": "Standardized part cost."
+        },
+        {
+          "source": "National Repair Shop Network Data",
+          "recordCount": 14567,
+          "averageCost": 360,
+          "notes": "High availability of aftermarket options."
+        }
+      ]
+    },
+    {
+      "type": "Door Panel",
+      "averageCost": 1300,
+      "costRange": {
+        "min": 600,
+        "max": 3000
+      },
+      "dataSources": [
+        {
+          "source": "Internal Claims Database",
+          "recordCount": 11234,
+          "averageCost": 1250,
+          "notes": "Includes labor for blending paint."
+        },
+        {
+          "source": "Audatex Repair Manuals",
+          "recordCount": "N/A",
+          "averageCost": 1400,
+          "notes": "Cost varies with side impact sensor recalibration."
+        },
+        {
+          "source": "National Repair Shop Network Data",
+          "recordCount": 9876,
+          "averageCost": 1350,
+          "notes": "N/A"
+        }
+      ]
+    },
+    {
+      "type": "Side Mirror",
+      "averageCost": 350,
+      "costRange": {
+        "min": 150,
+        "max": 1500
+      },
+      "dataSources": [
+        {
+          "source": "Internal Claims Database",
+          "recordCount": 22345,
+          "averageCost": 320,
+          "notes": "Heated, auto-dimming, and blind-spot monitoring features increase cost."
+        },
+        {
+          "source": "Audatex Repair Manuals",
+          "recordCount": "N/A",
+          "averageCost": 400,
+          "notes": "OEM part cost for modern vehicles."
+        },
+        {
+          "source": "National Repair Shop Network Data",
+          "recordCount": 18765,
+          "averageCost": 380,
+          "notes": "N/A"
+        }
+      ]
+    },
+    {
+      "type": "Paint/Body Work",
+      "averageCost": 1000,
+      "costRange": {
+        "min": 300,
+        "max": 5000
+      },
+      "dataSources": [
+        {
+          "source": "Internal Claims Database",
+          "recordCount": 34567,
+          "averageCost": 950,
+          "notes": "Per-panel cost average."
+        },
+        {
+          "source": "Audatex Repair Manuals",
+          "recordCount": "N/A",
+          "averageCost": 1100,
+          "notes": "Based on labor hours and material costs."
+        },
+        {
+          "source": "National Repair Shop Network Data",
+          "recordCount": 28765,
+          "averageCost": 1050,
+          "notes": "Tri-coat and specialty paints are more expensive."
+        }
+      ]
+    },
+    {
+      "type": "Hail Dents",
+      "averageCost": 3000,
+      "costRange": {
+        "min": 1000,
+        "max": 8000
+      },
+      "dataSources": [
+        {
+          "source": "Internal Claims Database",
+          "recordCount": 2345,
+          "averageCost": 2800,
+          "notes": "Cost is highly dependent on the number and size of dents."
+        },
+        {
+          "source": "Audatex Repair Manuals",
+          "recordCount": "N/A",
+          "averageCost": 3200,
+          "notes": "Paintless Dent Repair (PDR) is the primary method."
+        },
+        {
+          "source": "National Repair Shop Network Data",
+          "recordCount": 1876,
+          "averageCost": 3100,
+          "notes": "N/A"
+        }
+      ]
+    },
+    {
+      "type": "Windshield",
+      "averageCost": 600,
+      "costRange": {
+        "min": 300,
+        "max": 2500
+      },
+      "dataSources": [
+        {
+          "source": "Internal Claims Database",
+          "recordCount": 28765,
+          "averageCost": 580,
+          "notes": "ADAS recalibration is a major cost factor."
+        },
+        {
+          "source": "Audatex Repair Manuals",
+          "recordCount": "N/A",
+          "averageCost": 650,
+          "notes": "OEM glass with sensors."
+        },
+        {
+          "source": "National Repair Shop Network Data",
+          "recordCount": 23456,
+          "averageCost": 620,
+          "notes": "N/A"
+        }
+      ]
+    },
+    {
+      "type": "Fender",
+      "averageCost": 950,
+      "costRange": {
+        "min": 400,
+        "max": 2500
+      },
+      "dataSources": [
+        {
+          "source": "Internal Claims Database",
+          "recordCount": 13456,
+          "averageCost": 920,
+          "notes": "N/A"
+        },
+        {
+          "source": "Audatex Repair Manuals",
+          "recordCount": "N/A",
+          "averageCost": 1000,
+          "notes": "N/A"
+        },
+        {
+          "source": "National Repair Shop Network Data",
+          "recordCount": 11234,
+          "averageCost": 980,
+          "notes": "N/A"
+        }
+      ]
+    },
+    {
+      "type": "Quarter Panel",
+      "averageCost": 1800,
+      "costRange": {
+        "min": 800,
+        "max": 4000
+      },
+      "dataSources": [
+        {
+          "source": "Internal Claims Database",
+          "recordCount": 8765,
+          "averageCost": 1750,
+          "notes": "Structural repair and paint blending are major cost drivers."
+        },
+        {
+          "source": "Audatex Repair Manuals",
+          "recordCount": "N/A",
+          "averageCost": 1900,
+          "notes": "N/A"
+        },
+        {
+          "source": "National Repair Shop Network Data",
+          "recordCount": 7654,
+          "averageCost": 1850,
+          "notes": "N/A"
+        }
+      ]
+    },
+    {
+      "type": "Grille",
+      "averageCost": 400,
+      "costRange": {
+        "min": 150,
+        "max": 1200
+      },
+      "dataSources": [
+        {
+          "source": "Internal Claims Database",
+          "recordCount": 19876,
+          "averageCost": 380,
+          "notes": "Grilles with integrated sensors are significantly more expensive."
+        },
+        {
+          "source": "Audatex Repair Manuals",
+          "recordCount": "N/A",
+          "averageCost": 450,
+          "notes": "N/A"
+        },
+        {
+          "source": "National Repair Shop Network Data",
+          "recordCount": 16543,
+          "averageCost": 420,
+          "notes": "N/A"
+        }
+      ]
+    },
+    {
+      "type": "Interior Water Damage",
+      "averageCost": 5000,
+      "costRange": {
+        "min": 1500,
+        "max": 15000
+      },
+      "dataSources": [
+        {
+          "source": "Internal Claims Database",
+          "recordCount": 1234,
+          "averageCost": 4800,
+          "notes": "Often results in a total loss. Includes mold remediation."
+        },
+        {
+          "source": "Audatex Repair Manuals",
+          "recordCount": "N/A",
+          "averageCost": 5500,
+          "notes": "Extensive labor for interior removal and replacement."
+        },
+        {
+          "source": "National Repair Shop Network Data",
+          "recordCount": 987,
+          "averageCost": 5200,
+          "notes": "N/A"
+        }
+      ]
+    },
+    {
+      "type": "Rear Body Structure",
+      "averageCost": 10000,
+      "costRange": {
+        "min": 5000,
+        "max": 25000
+      },
+      "dataSources": [
+        {
+          "source": "Internal Claims Database",
+          "recordCount": 543,
+          "averageCost": 9500,
+          "notes": "Almost always results in a total loss. Involves frame pulling and extensive labor."
+        },
+        {
+          "source": "Audatex Repair Manuals",
+          "recordCount": "N/A",
+          "averageCost": 11000,
+          "notes": "N/A"
+        },
+        {
+          "source": "National Repair Shop Network Data",
+          "recordCount": 432,
+          "averageCost": 10500,
+          "notes": "N/A"
+        }
+      ]
+    },
+    {
+      "type": "Steering Column/Ignition",
+      "averageCost": 1500,
+      "costRange": {
+        "min": 500,
+        "max": 4000
+      },
+      "dataSources": [
+        {
+          "source": "Internal Claims Database",
+          "recordCount": 876,
+          "averageCost": 1400,
+          "notes": "Associated with theft claims. Includes key reprogramming."
+        },
+        {
+          "source": "Audatex Repair Manuals",
+          "recordCount": "N/A",
+          "averageCost": 1600,
+          "notes": "N/A"
+        },
+        {
+          "source": "National Repair Shop Network Data",
+          "recordCount": 765,
+          "averageCost": 1550,
+          "notes": "N/A"
+        }
+      ]
+    }
+  ],
+  "vehicleValuation": {
+    "dataSources": [
+      {
+        "source": "Internal Claims Database",
+        "recordCount": 45321,
+        "notes": "Based on actual cash value (ACV) from total loss claims over the last 12 months."
+      },
+      {
+        "source": "Kelley Blue Book (KBB) API",
+        "recordCount": "N/A",
+        "notes": "Provides real-time market value based on VIN, mileage, and condition."
+      },
+      {
+        "source": "Manheim Market Report (MMR)",
+        "recordCount": "N/A",
+        "notes": "Wholesale auction data, providing a baseline for vehicle values."
+      }
+    ]
+  },
+  "totalLossCategories": {
+    "description": "A vehicle is deemed a Total Loss (also called 'Constructive Total Loss' or 'Economic Total Loss') when the cost of repairs exceeds a certain percentage of the vehicle's Actual Cash Value (ACV), or when the vehicle is damaged beyond safe repair.",
+    "thresholdByState": {
+      "default": 0.75,
+      "notes": "Most states use 75% of ACV as the threshold. Some states vary (e.g., Texas uses 100%, Iowa uses 50%)."
+    },
+    "categories": [
+      {
+        "type": "Collision - Head-On",
+        "totalLossRate": 0.68,
+        "averagePayout": 14500,
+        "dataSources": [
+          {
+            "source": "Internal Claims Database",
+            "recordCount": 2345,
+            "notes": "68% of head-on collisions result in total loss."
+          }
+        ]
+      },
+      {
+        "type": "Collision - Rollover",
+        "totalLossRate": 0.82,
+        "averagePayout": 18200,
+        "dataSources": [
+          {
+            "source": "Internal Claims Database",
+            "recordCount": 1234,
+            "notes": "82% of rollovers result in total loss due to structural damage."
+          }
+        ]
+      },
+      {
+        "type": "Weather Damage - Flood",
+        "totalLossRate": 0.91,
+        "averagePayout": 12800,
+        "dataSources": [
+          {
+            "source": "Internal Claims Database",
+            "recordCount": 3456,
+            "notes": "91% of flood-damaged vehicles are totaled due to electrical and contamination issues."
+          }
+        ]
+      },
+      {
+        "type": "Collision - Side Impact (T-Bone)",
+        "totalLossRate": 0.45,
+        "averagePayout": 16500,
+        "dataSources": [
+          {
+            "source": "Internal Claims Database",
+            "recordCount": 4567,
+            "notes": "45% result in total loss, higher when frame damage is present."
+          }
+        ]
+      },
+      {
+        "type": "Fire",
+        "totalLossRate": 0.97,
+        "averagePayout": 22000,
+        "dataSources": [
+          {
+            "source": "Internal Claims Database",
+            "recordCount": 876,
+            "notes": "97% of fire-damaged vehicles are totaled. Salvage value is minimal."
+          }
+        ]
+      }
+    ],
+    "salvageValueSources": [
+      {
+        "source": "Copart Auction Data",
+        "recordCount": "N/A",
+        "notes": "Real-time salvage auction values for totaled vehicles."
+      },
+      {
+        "source": "IAA (Insurance Auto Auctions)",
+        "recordCount": "N/A",
+        "notes": "Salvage and total loss vehicle auction data."
+      },
+      {
+        "source": "Internal Salvage Database",
+        "recordCount": 8765,
+        "notes": "Historical salvage values from company's total loss settlements."
+      }
+    ]
+  }
+}
