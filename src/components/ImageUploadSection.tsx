@@ -236,11 +236,15 @@ export function ImageUploadSection({
         <>
           <div className="mb-6 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
             {existingImages.map((imageUrl, index) => {
-              // Use absolute URL once origin is known so deployed site (e.g. Railway) loads from correct origin
-              const imgSrc =
-                origin && !imageUrl.startsWith("data:") && !imageUrl.startsWith("http")
-                  ? origin + (imageUrl.startsWith("/") ? imageUrl : `/${imageUrl}`)
+              // Serve via /api/uploads/ so deployed site (Railway) can serve runtime uploads
+              const url =
+                imageUrl.startsWith("/images/uploads/")
+                  ? `/api/uploads/${imageUrl.replace("/images/uploads/", "")}`
                   : imageUrl;
+              const imgSrc =
+                origin && !url.startsWith("data:") && !url.startsWith("http")
+                  ? origin + (url.startsWith("/") ? url : `/${url}`)
+                  : url;
               return (
               <div
                 key={index}

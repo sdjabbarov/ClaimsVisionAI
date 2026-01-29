@@ -49,8 +49,8 @@ export async function POST(
     const buffer = Buffer.from(base64Data, "base64");
     await writeFile(filePath, buffer);
 
-    // Return public URL
-    const imageUrl = `/images/uploads/${newFileName}`;
+    // Return URL via our API so uploaded images work on Railway (no reliance on static file serving)
+    const imageUrl = `/api/uploads/${newFileName}`;
 
     return NextResponse.json({ imageUrl });
   } catch (error) {
